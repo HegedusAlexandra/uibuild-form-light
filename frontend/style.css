@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #f7e4d4
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+h1 {
+    align-self: center;
+
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #467745;
+}
+input{
+    width: 480px;
+    max-width: 480px;
+    height: 64px;
+
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-color: white;
+
+}    
+    
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #467745;}
+
+
+textarea {
+    
+    width: 480px;
+    height: 120px;
+
+    padding: 12px 20px;
+
+    background-color: white;
+
+    
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 480px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #467745;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#Elolvastam {
+    width: 25px;
+    height: 25px;
+    border: 0px;
+}
+
+label {
+    padding-left:10px;
+}
+
+button {
+    width: 280px;
+    max-width: 280px;
+    height: 80px;
+
+    border-radius: 100px 100px 100px 100px;
+    
+    background-color: #467745;
+
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: 0.2em;
+    color: #f7e4d4;
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 520px) {
+    
+    section {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    h1 {
+
+        font-size: 36px;
+        
+    }
+
+    input,textarea,section {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    ::placeholder{
+        font-size: 16px;
+    } 
+
+    button {
+        font-size: 21px;
+        
+        
+    }
+  }
