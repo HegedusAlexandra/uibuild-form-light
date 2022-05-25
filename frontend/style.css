@@ -9,6 +9,8 @@ body {
     background-color: #f7e4d4
 }
 
+
+
 div{
     display: flex;
     flex-direction: column;
@@ -18,8 +20,11 @@ div{
     height: fit-content;
 }
 
+
+
 h1 {
-    align-self: center;
+    display: block;
+    
 
     font-family: 'EB Garamond', serif;
     font-weight: 400;
@@ -107,6 +112,8 @@ button {
 }
 
 @media screen and (max-width: 520px) {
+
+    
     
     section {
         display: flex;
@@ -116,7 +123,8 @@ button {
     h1 {
 
         font-size: 36px;
-        
+        align-self: flex-start;
+        padding-left: 20px ;
     }
 
     input,textarea,section {
@@ -128,6 +136,11 @@ button {
     ::placeholder{
         font-size: 16px;
     } 
+
+    #Elolvastam{
+        align-self: flex-start;
+        margin-left: 0px;
+    }
 
     button {
         font-size: 21px;
